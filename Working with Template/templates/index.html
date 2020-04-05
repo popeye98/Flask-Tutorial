@@ -5,8 +5,18 @@
 
 {% endblock Title %}
 {% block body %}
-  
+<div class="container">
+  {% if number>10 %}
+  <p>{{number}} is greater than 10</p>
+  {%else%}
+  <p>{{number}} is less than 10</p>
+    
+  {% endif %}
 
+  {% for f in my_friends  %}
+<p><h3>{{f}}</h3></p>
+    
+  {% endfor %}
 <h3>This is Home</h3>
-
+</div>
 {% endblock body %}
